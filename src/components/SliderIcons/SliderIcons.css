@@ -1,0 +1,15 @@
+.slider_container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.slider_icons {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+  cursor: grabbing;
+
+  list-style: none;
+}

@@ -13,11 +13,14 @@ const Header = ({ user, alt, src }) => {
   const changeIcon = () => {
     enable === true ? setEnable(false) : setEnable(true);
 
+    let getSaldo = document.getElementById("saldo");
+
     if (enable) {
-      document.getElementById("saldo").innerText = "R$ *******";
+      getSaldo.textContent = "R$ *******";
     } else {
-      document.getElementById("saldo").innerText = `R$ ${saldo}`;
+      getSaldo.textContent = `R$ ${saldo}`;
     }
+    return getSaldo.setAttribute('class', 'title_main')
   };
 
   return (
