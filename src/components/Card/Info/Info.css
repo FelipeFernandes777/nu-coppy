@@ -1,0 +1,38 @@
+.info_card_container {
+  border-top: 1px solid #ecf0f3 ;
+  border-bottom: 1px solid #ecf0f3;
+  width: 100%;
+  height: auto;
+}
+
+.header_info_card {
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+  margin: 1rem;
+}
+
+.title_info_card {
+  font-size: 1.2rem;
+}
+
+.main_content {
+  width: auto;
+  height: auto;
+  margin: 1rem;
+}
+
+.sub_title_main_content {
+  color: #2c3942;
+  line-height: 1rem;
+}
+
+.text_main {
+  margin: .4rem 0;
+  font-size: .8rem;
+}
+
+.text_main.bold {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
