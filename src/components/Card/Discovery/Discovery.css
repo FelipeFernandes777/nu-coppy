@@ -1,0 +1,17 @@
+.discovery_container{
+  overflow: hidden;
+  width: 100%;
+  height: 15rem;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.img_card_discovery {
+  width: 100%;
+  height: 40%;
+}
+.img_discovery {
+  width: 100%;
+  height: 10rem;
+}

@@ -9,16 +9,23 @@ import { RxEyeClosed, RxEyeOpen } from "react-icons/rx";
 const Header = ({ user, alt, src }) => {
   const [enable, setEnable] = useState(true);
   const [saldo, setSaldo] = useState("1.324,98");
+  const [invoice, setInvoice] = useState("451,58")
 
   const changeIcon = () => {
     enable === true ? setEnable(false) : setEnable(true);
 
     let getSaldo = document.getElementById("saldo");
+    let getInvoice = document.getElementById("invoice");
+    let getCredite = document.getElementById("invoice_credit");
 
     if (enable) {
       getSaldo.textContent = "R$ *******";
+      getInvoice.textContent = "R$ ******"
+      getCredite.style = 'display: none'
     } else {
       getSaldo.textContent = `R$ ${saldo}`;
+      getInvoice.textContent= `R$ ${invoice}`
+      getCredite.style = 'display: block'
     }
     return getSaldo.setAttribute('class', 'title_main')
   };

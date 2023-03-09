@@ -6,6 +6,7 @@ import Balance from "../components/Balance/Balance";
 import Card from "../components/Card/Card";
 import Info from "../components/Card/Info/Info";
 import Promotion from "../components/Card/Promotion/Promotion";
+import SeeMore from "../components/Card/SeeMore/SeeMore";
 import Header from "../components/Header/Header";
 import SliderIcons from "../components/SliderIcons/SliderIcons";
 
@@ -28,6 +29,7 @@ export default function Index() {
         text="Valor disponivel de até"
         subText="R$25.000,00"
       />
+      <SeeMore />
     </div>
   );
 }

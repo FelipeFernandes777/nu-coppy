@@ -16,10 +16,10 @@ export default function Info({ title, subTitle, invoice, text, subText }) {
       <div className="main_content">
           <h4 className="sub_title_main_content">{subTitle}</h4>
           <div className="invoice_main_content">
-            <p className="text_main bold">{invoice}</p>
+            <p className="text_main bold" id="invoice">{invoice}</p>
           </div>
           <div className="text_main_content">
-            <p className="text_main">{text}</p>
+            <p className="text_main" id="invoice_credit">{text}</p>
           </div>
           <div className="sub_text_main_content">
             <p className="text_main">{subText}</p>
